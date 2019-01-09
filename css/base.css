@@ -821,6 +821,34 @@ button {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+/* 签名 */
+.signature {
+    position: relative;
+    font-family: Microsoft YaHei,微软雅黑,MicrosoftJhengHei,华文细黑,STHeiti,MingLiu;
+    font-size: 14px;
+    background: hsl(220, 23%, 98%)!important;
+    padding: 17px;
+    border: 1px solid hsl(220, 16%, 94%)!important;
+    border-left: 4px solid #f44;
+    border-radius: 3px;
+    color: #414857;
+    text-indent: 0;
+}
+.signature:before{
+    content: "!";
+    background-color: #f66;
+    position: absolute;
+    top: 25px;
+    left: -12px;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 14px;
+}
 /*博客园评论框*/
 .comment_vote {
     padding-right: 10px;
@@ -1248,17 +1276,19 @@ button {
 
 /*****留言页面开始*****************************/
 #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100px;
     _height: 15px;
     position: absolute;
     margin: 0;
-    margin-top: 200px;
+    /* margin-top: 200px; */
     left: 0;
     right: 0;
-    background: #232323;
-    padding: 17px 0 27px;
-    text-align: center;
-    color: #888;
+    background: #06060b;
+    color: #60606d;
     font-size: 12px;
     line-height: 1.5;
 }
@@ -3226,7 +3256,7 @@ button {
     transition-delay: 0.4s;
     outline: none;
     cursor: pointer;
-    background: #000 url(https://raw.githubusercontent.com/xlupc/cnblogs-theme/master/img/dawn.jpg) center no-repeat;
+    background: #000 url(https://raw.githubusercontent.com/xlupc/cnblogs-theme/master/img/f.jpg) center no-repeat;
     background-size: 100%;
 }
 
