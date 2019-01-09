@@ -59,8 +59,8 @@ $(document).ready(function(){
         bottom_html += '<a href="'+articleSource+'" target="_blank">'+articleAuthor+'</a></span></strong> <br>';
         bottom_html += '<span style="font-weight: bold; white-space:nowrap;">出　　处</span>：<a href="'+articleSource+'" target="_blank">'+articleSource+'</a>';
     } else if ( window.location.href.search("www.cnblogs.com/xiongxiaolong") != -1 ) {
-        bottom_html += '<a href="http://www.cnblogs.com/xiongxiaolong/" target="_blank">xlupc</a></span></strong> <br>';
-        bottom_html += '<span style="font-weight: bold; white-space:nowrap;">出　　处</span>：<a href="http://www.cnblogs.com/xiongxiaolong/" target="_blank">http://www.cnblogs.com/xiongxiaolong/</a>';
+        bottom_html += '<a href="https://www.cnblogs.com/xiongxiaolong/" target="_blank">xlupc</a></span></strong> <br>';
+        bottom_html += '<span style="font-weight: bold; white-space:nowrap;">出　　处</span>：<a href="https://www.cnblogs.com/xiongxiaolong/" target="_blank">https://www.cnblogs.com/xiongxiaolong/</a>';
     } else {
         var str = window.cnblogsConfig.blogUser;
         var homeUrl = tmp;

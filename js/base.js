@@ -706,7 +706,7 @@ function Base() {
 
 
         window.setInterval( setRunTime, 500 );
-        setBlogroll();
+        // setBlogroll();
         timeIds.setCnzzTId    = window.setInterval( setCnzz, 1000 );
         // timeIds.setAmazingTId = window.setInterval( setAmazing, 1000 );
 
