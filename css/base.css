@@ -828,11 +828,12 @@ button {
     font-size: 14px;
     background: hsl(220, 23%, 98%)!important;
     padding: 17px;
-    border: 1px solid hsl(220, 16%, 94%)!important;
+    margin-left: 8px!important;
+    /* border: 1px solid hsl(220, 16%, 94%)!important; */
     border-left: 4px solid #f44;
-    border-radius: 3px;
+    border-radius: 0 3px 3px 0;
     color: #414857;
-    text-indent: 0;
+    text-indent: 0!important;
 }
 .signature:before{
     content: "!";
@@ -1280,8 +1281,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100px;
-    _height: 15px;
+    min-height: 150px;
     position: absolute;
     margin: 0;
     /* margin-top: 200px; */
@@ -3256,7 +3256,7 @@ button {
     transition-delay: 0.4s;
     outline: none;
     cursor: pointer;
-    background: #000 url(https://raw.githubusercontent.com/xlupc/cnblogs-theme/master/img/f.jpg) center no-repeat;
+    background: #000 url(https://raw.githubusercontent.com/xlupc/cnblogs-theme/master/img/f.jpg) no-repeat;
     background-size: 100%;
 }
 
