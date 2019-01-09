@@ -3006,7 +3006,7 @@ button {
     max-height: 100vh;
     /*margin-bottom: 5rem;*/
     text-align: center;
-    background: #222 url(https://images.cnblogs.com/cnblogs_com/xiongxiaolong/1379242/o_train.jpg) center center no-repeat;
+    background: #222 url(https://raw.githubusercontent.com/xlupc/cnblogs-theme/master/img/train.jpg) center center no-repeat;
     background-size: cover;
     overflow: hidden;
     position: absolute;
@@ -3226,7 +3226,7 @@ button {
     transition-delay: 0.4s;
     outline: none;
     cursor: pointer;
-    background: #000 url(https://www.cnblogs.com/images/cnblogs_com/xiongxiaolong/1379242/t_dawn.jpg) center no-repeat;
+    background: #000 url(https://raw.githubusercontent.com/xlupc/cnblogs-theme/master/img/dawn.jpg) center no-repeat;
     background-size: 100%;
 }
 
@@ -3809,7 +3809,7 @@ span.cnblogs_code {
     padding: 10px;
     height: 200px;
     position: relative;
-    background: #fff url(https://www.cnblogs.com/images/cnblogs_com/xiongxiaolong/1379242/t_comment_bg.jpg) right -65px;
+    background: #fff url(https://raw.githubusercontent.com/xlupc/cnblogs-theme/master/img/comment_bg.jpg) right -65px;
     background-size: 250px;
     background-repeat: no-repeat;
 }
