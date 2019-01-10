@@ -699,7 +699,7 @@ function Base() {
         // var pvHtml =  '<i class="iconfont icon-odps-data cnzz" style="position: relative;top: 2px;left: 3px;cursor: pointer;"></i>';
         var pvHtml = '<span id="amazingStatSpan"></span>';
         // pvHtml += '<div>【'+window.cnblogsConfig.bottomText.left+'<span id="footerTextIcon">'+window.cnblogsConfig.bottomText.icon+'</span>'+window.cnblogsConfig.bottomText.right+'】</div>';
-        pvHtml += '<div style="text-align: center;">I love waking up in the morning and not knowing what\'s going to happen， or who I\'m going to meet， where I\'m going to wind up.</div>'
+        pvHtml += '<div style="text-align: center;">I love waking up in the morning and not knowing what\'s going to happen， or who I\'m going to meet， where I\'m going to wind up</div>'
         // pvHtml += "<div><span id='blogRunTimeSpan'></span><span class='my-face'>ღゝ◡╹)ノ♡</span></div>";
         pvHtml += "<div><span id='blogRunTimeSpan'></span></div>";
         // pvHtml += '<div id="blogrollInfo"></div>';
@@ -742,7 +742,7 @@ function Base() {
                         cnzzInfo.push(str)
                     }
                 });
-                cnzzInfo.push($(cnzzStat[2]).text().replace('当前在线','Online').replace('[',':').replace(']',''));
+                cnzzInfo.push($(cnzzStat[2]).text().replace('当前在线','Online').replace('[',': ').replace(']',''));
                 $('#cnzzInfo').text(cnzzInfo.join(' | '));
                 xlupcJs.clearIntervalTimeId(timeIds.setCnzzTId);
             }
