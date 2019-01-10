@@ -3004,6 +3004,7 @@ button {
 .myposts_title {
     font-weight: bold;
     text-align: center;
+    margin-top: 24px;
 }
 
 #sideBar {
