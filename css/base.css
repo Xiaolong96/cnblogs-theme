@@ -3430,8 +3430,8 @@ blockquote p {
     color: #555;
     opacity: 0.5;
     filter: Alpha(opacity=50);
-    -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
     position: relative;
 }
 
