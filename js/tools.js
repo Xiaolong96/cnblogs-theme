@@ -1,15 +1,15 @@
 function myTools() {
     var xlTools = this;
     var colors      = {
-        "gray": "color: #1B2B34;font-size: 12px; line-height: 18px;",
-        "red": "color: #EC5f67;font-size: 12px; line-height: 18px;",
-        "orange": "color: #F99157;font-size: 12px; line-height: 18px;",
-        "yellow": "color: #FAC863;font-size: 12px; line-height: 18px;",
-        "green": "color: #99C794;font-size: 12px; line-height: 18px;",
-        "teal": "color: #5FB3B3;font-size: 12px; line-height: 18px;",
-        "blue": "color: #6699CC;font-size: 12px; line-height: 18px;",
-        "purple": "color: #C594C5;font-size: 12px; line-height: 18px;",
-        "brown": "color: #AB7967;font-size: 12px; line-height: 18px;"
+        "gray": "color: #1B2B34;font-size: 12px; line-height: 24px;",
+        "red": "color: #EC5f67;font-size: 12px; line-height: 24px;",
+        "orange": "color: #F99157;font-size: 12px; line-height: 24px;",
+        "yellow": "color: #FAC863;font-size: 12px; line-height: 24px;",
+        "green": "color: #99C794;font-size: 12px; line-height: 24px;",
+        "teal": "color: #5FB3B3;font-size: 12px; line-height: 24px;",
+        "blue": "color: #6699CC;font-size: 12px; line-height: 24px;",
+        "purple": "color: #C594C5;font-size: 12px; line-height: 24px;",
+        "brown": "color: #AB7967;font-size: 12px; line-height: 24px;"
     };
 
     /**

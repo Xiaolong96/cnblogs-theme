@@ -3818,6 +3818,10 @@ span.cnblogs_code {
     /*opacity: 0.3;*/
 }
 
+.mCSB_container {
+    margin: 10px;
+}
+
 .code_img_closed , .code_img_opened{
     cursor: pointer;
 }
