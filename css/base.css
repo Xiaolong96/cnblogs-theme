@@ -1284,6 +1284,7 @@ button {
     min-height: 150px;
     position: absolute;
     margin: 0;
+    padding: 0 20px 0 20px;
     /* margin-top: 200px; */
     left: 0;
     right: 0;
@@ -3474,6 +3475,21 @@ blockquote p {
 
 .toUpDownSpan {
     top: 3px;
+}
+
+.rightMenuIcon {
+    font-size: 50px;
+    background: rgba(204,204,204,.5);
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: block;
+    border-radius: 100%;
+}
+.rightMenuIcon:hover {
+    background: #b5b5b5;
 }
 
 #cnblogs_post_body table {

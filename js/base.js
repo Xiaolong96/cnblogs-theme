@@ -358,7 +358,7 @@ function Base() {
             || window.cnblogsConfig.bgAnimationRendered
         ) {
             var html = '<div id="pageAnimationOffOn" data="off" style="z-index:  999;position:  absolute;top: 15px;right: 20px;font-size: 14px;color: #f9f9f9;cursor: pointer;">';
-            html += '<span id="pageAnimationOffOnIcon" class="iconfont icon-shandian" style="display: inline-block;"></span>';
+            html += '<span id="pageAnimationOffOnIcon" class="iconfont icon-lightningbshandian" style="display: inline-block;"></span>';
             html += '<span id="pageAnimationOffOnText">关闭页面特效</span>';
             html += '</div>';
             $('body').prepend(html);
@@ -399,7 +399,7 @@ function Base() {
 
         // 使用博客园代码样式
         function cnblogsCode() {
-            codeCopyA.html('<i class="iconfont icon-code5" style="color: #999;"></i>');
+            codeCopyA.html('<i class="iconfont icon-code" style="color: #999;"></i>');
             codeSpan.css('background-color', '#f6f8fa');
             codePre.css({
                 'background-color': '#f6f8fa',
@@ -413,7 +413,7 @@ function Base() {
             setCodeBefore();
             require(['highlightjs'], function() {
                 $('pre').each(function(i, block) {
-                    codeCopyA.html('<i class="iconfont icon-code5 hljs-comment" style="font-style: inherit;"></i>');
+                    codeCopyA.html('<i class="iconfont icon-code hljs-comment" style="font-style: inherit;"></i>');
                     if ($.inArray(hltheme, [
                             'github-gist', 'googlecode', 'grayscale',
                             'idea', 'isbl-editor-light', 'qtcreator_light',
@@ -455,7 +455,7 @@ function Base() {
         }
 
         function setPrettifyCopy() {
-            codeCopyA.html('<i class="iconfont icon-code5 com" style="font-style: inherit;"></i>');
+            codeCopyA.html('<i class="iconfont icon-code com" style="font-style: inherit;"></i>');
         }
 
         // 设置代码滚动条样式
@@ -703,7 +703,7 @@ function Base() {
         // pvHtml += "<div><span id='blogRunTimeSpan'></span><span class='my-face'>ღゝ◡╹)ノ♡</span></div>";
         pvHtml += "<div><span id='blogRunTimeSpan'></span></div>";
         // pvHtml += '<div id="blogrollInfo"></div>';
-        pvHtml += '<div id="cnzzInfo"></div>';
+        pvHtml += '<div id="cnzzInfo" style="text-align: center;"></div>';
         $('#footer').append(pvHtml);
 
 
@@ -732,14 +732,13 @@ function Base() {
         
         function setCnzz() {
             var cnzzStat = $('#cnzz_stat_icon_1275888752 a');
-            console.log($(cnzzStat[1]).text(), 'oooo');
             if (cnzzStat.length > 0) {
                 var cnzzInfo = [];
                 var cnzzArr  = $(cnzzStat[1]).text().split('|');
                 $.each(cnzzArr, function (i) {
                     var str = $.trim(cnzzArr[i]);
                     if (str != '') {
-                        str = str.replace('今日','Today').replace('昨日','Yesterday').replace('[',':').replace(']','');
+                        str = str.replace('今日','Today').replace('昨日','Yesterday').replace('[',': ').replace(']','');
                         cnzzInfo.push(str)
                     }
                 });
@@ -841,7 +840,7 @@ function Base() {
         if (rightMenu.length > 0) {
 
             // 添加上下滚动
-            var upDownHtml = '<div id="toUpDown" data="up"><span class="rightMenuSpan toUpDownSpan">返回顶部</span><div id="toUpDownI"><i class="iconfont icon-zhiding"></i></div></div>';
+            var upDownHtml = '<div id="toUpDown" data="up"><span class="rightMenuSpan toUpDownSpan">返回顶部</span><div id="toUpDownI"><i class="rightMenuIcon iconfont icon-zhiding"></i></div></div>';
             rightMenu.prepend(upDownHtml);
             xlupcJs.rightMenuMous('#toUpDown', '.toUpDownSpan');
 
@@ -852,9 +851,9 @@ function Base() {
             }
 
             if (clickStr.indexOf('unfollow') > 0 || clickStr == '') {
-                var attHtml = '<div id="attention" clickflg="true"><span class="rightMenuSpan attentionSpan">已关注</span><i class="iconfont icon-dianzan"></i></div>';
+                var attHtml = '<div id="attention" clickflg="true"><span class="rightMenuSpan attentionSpan">已关注</span><i class="rightMenuIcon iconfont icon-guanzhu"></i></div>';
             } else {
-                var attHtml = '<div id="attention" onclick="' + clickStr.replace('unfollow', 'follow') + '" clickflg="false"><span class="rightMenuSpan attentionSpan">关注</span><i class="iconfont icon-dianzan"></i></div>';
+                var attHtml = '<div id="attention" onclick="' + clickStr.replace('unfollow', 'follow') + '" clickflg="false"><span class="rightMenuSpan attentionSpan">关注</span><i class="rightMenuIcon iconfont icon-guanzhu"></i></div>';
             }
 
             rightMenu.prepend(attHtml);
@@ -867,22 +866,22 @@ function Base() {
     /**
      * 添加非主页右下角菜单
      */
-    this.addNotHomeRightMenu = function() {
-        var rightMenu = $('#rightMenu');
-        if (rightMenu.length > 0 && $('#div_digg').length > 0) {
+    // this.addNotHomeRightMenu = function() {
+    //     var rightMenu = $('#rightMenu');
+    //     if (rightMenu.length > 0 && $('#div_digg').length > 0) {
 
-            if ($('#toUpDown').length == 0 && $('#attention').length == 0) xlupcJs.addHomeRightMenu();
+    //         if ($('#toUpDown').length == 0 && $('#attention').length == 0) xlupcJs.addHomeRightMenu();
 
-            // 添加踩
-            var rightBuryitHtml = '<div id="rightBuryit" clickflg="false" onclick="' + ($(".buryit").attr("onclick")) + '"><span class="rightMenuSpan rightBuryitSpan">' + $('#bury_count').text() + '</span><i class="iconfont icon-buzan"></i></div>';
-            rightMenu.prepend(rightBuryitHtml);
-            xlupcJs.rightMenuMous('#rightBuryit', '.rightBuryitSpan');
+    //         // 添加踩
+    //         var rightBuryitHtml = '<div id="rightBuryit" clickflg="false" onclick="' + ($(".buryit").attr("onclick")) + '"><span class="rightMenuSpan rightBuryitSpan">' + $('#bury_count').text() + '</span><i class="iconfont icon-buzan"></i></div>';
+    //         rightMenu.prepend(rightBuryitHtml);
+    //         xlupcJs.rightMenuMous('#rightBuryit', '.rightBuryitSpan');
 
-            // 添加顶
-            var rightDiggitHtml = '<div id="rightDiggit" clickflg="false" onclick="' + ($(".diggit").attr("onclick")) + '"><span class="rightMenuSpan rightDiggitSpan">' + $('#digg_count').text() + '</span><i class="iconfont icon-zan1"></i></div>';
-            rightMenu.prepend(rightDiggitHtml);
-            xlupcJs.rightMenuMous('#rightDiggit', '.rightDiggitSpan');
-            xlupcJs.clearIntervalTimeId(timeIds.setNotHomeRightMenuTId);
-        }
-    }
+    //         // 添加顶
+    //         var rightDiggitHtml = '<div id="rightDiggit" clickflg="false" onclick="' + ($(".diggit").attr("onclick")) + '"><span class="rightMenuSpan rightDiggitSpan">' + $('#digg_count').text() + '</span><i class="iconfont icon-zan1"></i></div>';
+    //         rightMenu.prepend(rightDiggitHtml);
+    //         xlupcJs.rightMenuMous('#rightDiggit', '.rightDiggitSpan');
+    //         xlupcJs.clearIntervalTimeId(timeIds.setNotHomeRightMenuTId);
+    //     }
+    // }
 }
