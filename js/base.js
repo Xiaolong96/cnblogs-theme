@@ -731,7 +731,7 @@ function Base() {
         // }
         
         function setCnzz() {
-            var cnzzStat = $('.id_cnzz_stat_icon');
+            var cnzzStat = $('#cnzz_stat_icon_1275888752 a');
             console.log($(cnzzStat[1]).text(), 'oooo');
             if (cnzzStat.length > 0) {
                 var cnzzInfo = [];
