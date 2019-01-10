@@ -91,7 +91,7 @@ function Base() {
         (function () {
             var re = /xlupc/
                 ,i = 0;
-            console.log('%c ' + re, 'color: orange;inline-hight: 24px;');
+            console.log('%c ' + re, 'color: orange;line-height: 24px;');
             re.toString = function () {
                 return '欢迎访问本博客，这是您第 ' + (++i) + ' 次打开控制台。';
             };
