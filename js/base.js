@@ -91,10 +91,10 @@ function Base() {
         (function () {
             var re = /x/
                 ,i = 0;
+            console.log('%c ' + re, 'color: orange');
             re.toString = function () {
                 return '欢迎访问本博客，这是您第 ' + (++i) + ' 次打开控制台。';
             };
-            console.log('%c ' + re, 'color: orange');
         })();
 
         // 延时清除全部定时器
