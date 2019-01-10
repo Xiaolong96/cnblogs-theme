@@ -88,14 +88,22 @@ function Base() {
         // 控制台输出
         tools.consoleText(window.cnblogsConfig.consoleList, 'random');
 
-        (function () {
-            var re = /x/
-                ,i = 0;
-            console.log('%c ' + re, 'color: orange');
-            re.toString = function () {
-                return '欢迎访问本博客，这是您第 ' + (++i) + ' 次打开控制台。';
-            };
-        })();
+        // (function () {
+        //     var re = /x/
+        //         ,i = 0;
+        //     console.log('%c ' + re, 'color: orange');
+        //     re.toString = function () {
+        //         return '欢迎访问本博客，这是您第 ' + (++i) + ' 次打开控制台。';
+        //     };
+        // })();
+        function printInfo(){
+            var i = 0;
+            return function () {
+                console.log(`%c 欢迎访问本博客，这是您第${++i}次打开控制台`, 'color: yellow;line-height: 24px;');
+            }
+        }
+        let outlog = printInfo();
+        outlog();
 
         // 延时清除全部定时器
         setTimeout(xlupcJs.clearIntervalAll, 30000);
